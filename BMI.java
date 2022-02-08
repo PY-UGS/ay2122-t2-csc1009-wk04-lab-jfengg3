@@ -2,29 +2,29 @@ import java.util.Scanner;
 
 public class BMI {
 
-    double pound;
-    double inches;
+    private double pound;
+    private double inches;
 
     // Getter
-    public double getPound() {
+    private double getPound() {
         return pound;
     }
 
-    public double getInches() {
+    private double getInches() {
         return inches;
     }
 
     // Setter
-    public void setPound(double weight) {
+    protected void setPound(double weight) {
         this.pound = weight;
     }
 
-    public void setinches(double height) {
+    protected void setinches(double height) {
         this.inches = height;
     }
 
     // Methods
-    public double getbmi() {
+    protected double getbmi() {
         return getPound() / (getInches() * getInches()) * 703;
     }
 
